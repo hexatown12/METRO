@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav .flex.space-x-6 {
+                margin: 10px 0;
+            }
+            nav .flex.items-center.space-x-4 {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.2rem;
+            }
+            .grid>div {
+                padding: 12px;
+            }
+            img {
+                height: 120px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <nav class="flex justify-between items-center px-6 py-4 shadow flex-wrap">
+        <div class="flex items-center space-x-2">
+            <span class="font-bold text-lg">E-Commerce</span>
+        </div>
+        <div class="flex space-x-6 text-sm md:text-base">
+            <a href="index.html" class="hover:text-blue-600">Home</a>
+            <a href="about.html" class="hover:text-blue-600">About</a>
+            <a href="contact.html" class="hover:text-blue-600">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4 mt-2 md:mt-0">
+            <button class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm md:text-base">
+        <a href="watch.html">Watchlist</a>
+      </button>
+            <button class="flex items-center space-x-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 text-sm md:text-base">
+        <a href="cart.html">Your Cart</a>
+      </button>
+        </div>
+    </nav>
+
+    <section class="text-center py-8">
+        <h2 class="text-2xl font-bold mb-4">Our Products</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
+
+            <!-- Product 1 -->
+            <div class="border rounded-lg shadow p-4" data-id="1" data-name="Fjallraven - Foldsac" data-price="109.95" data-image="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">Fjallraven - Foldsac</h3>
+                <p class="text-blue-600 font-semibold">$109.95</p>
+                <p class="text-sm mb-2">Your perfect pack for everyday use and walks in the forest.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="border rounded-lg shadow p-4" data-id="2" data-name="Mens Casual Premium" data-price="22.3" data-image="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">Mens Casual Premium</h3>
+                <p class="text-blue-600 font-semibold">$22.3</p>
+                <p class="text-sm mb-2">Slim-fitting style, contrast raglan long sleeve, three-button henley.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="border rounded-lg shadow p-4" data-id="3" data-name="Mens Cotton Jacket" data-price="55.99" data-image="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">Mens Cotton Jacket</h3>
+                <p class="text-blue-600 font-semibold">$55.99</p>
+                <p class="text-sm mb-2">Great outerwear jackets for Spring/Autumn/Winter.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="border rounded-lg shadow p-4" data-id="4" data-name="Mens Casual Slim Fit" data-price="15.99" data-image="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">Mens Casual Slim Fit</h3>
+                <p class="text-blue-600 font-semibold">$15.99</p>
+                <p class="text-sm mb-2">The color could be slightly different in practice.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="border rounded-lg shadow p-4" data-id="5" data-name="John Hardy Women's L" data-price="695" data-image="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">John Hardy Women's L</h3>
+                <p class="text-blue-600 font-semibold">$695</p>
+                <p class="text-sm mb-2">From our Legends Collection, inspired by the mythical water dragon.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="border rounded-lg shadow p-4" data-id="6" data-name="Solid Gold Petite Mi" data-price="168" data-image="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">Solid Gold Petite Mi</h3>
+                <p class="text-blue-600 font-semibold">$168</p>
+                <p class="text-sm mb-2">Satisfaction guaranteed. Return or exchange within 30 days.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="border rounded-lg shadow p-4" data-id="7" data-name="White Gold Plated Pr" data-price="9.99" data-image="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">White Gold Plated Pr</h3>
+                <p class="text-blue-600 font-semibold">$9.99</p>
+                <p class="text-sm mb-2">Classic Created Wedding Engagement Solitaire Diamond Ring.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="border rounded-lg shadow p-4" data-id="8" data-name="Pierced Owl Rose Gol" data-price="10.99" data-image="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png" class="w-full h-40 mb-4 object-contain">
+                <h3 class="font-bold">Pierced Owl Rose Gol</h3>
+                <p class="text-blue-600 font-semibold">$10.99</p>
+                <p class="text-sm mb-2">Rose Gold Plated Double Flared Tunnel Plug Earrings.</p>
+                <button class="add-cart bg-green-600 text-white px-4 py-1 rounded w-full mb-2">Add to Cart</button>
+                <button class="add-wishlist bg-red-500 text-white px-4 py-1 rounded w-full">Add to Wishlist</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

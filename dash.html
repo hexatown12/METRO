@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap justify-between items-center px-6 py-4">
+            <div class="flex items-center space-x-2 w-full md:w-auto justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl">🛒</span>
+                    <h1 class="text-xl font-bold">E-Commerce</h1>
+                </div>
+            </div>
+
+            <nav class="flex flex-wrap w-full md:w-auto justify-center md:justify-start space-x-4 mt-3 md:mt-0">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </nav>
+
+            <div class="flex flex-wrap w-full md:w-auto justify-center md:justify-end space-x-4 mt-3 md:mt-0">
+                <span class="text-base"><a href="cart.html">View Cart</a></span>
+                <span class="text-base"><a href="watch.html">View Wishlist</a></span>
+                <a href="dash.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm md:text-base">Admin Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-col md:flex-row">
+        <aside class="w-full md:w-64 bg-gray-50 h-auto md:h-screen p-6 space-y-6 border-r">
+            <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                <span></span>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                <span></span>
+                <span>Add Product</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                <span></span>
+                <span>View Product</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 hover:text-blue-600">
+                <span></span>
+                <span>Logout</span>
+            </a>
+        </aside>
+
+        <main class="flex-1 p-6 md:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h2 class="text-blue-600 text-lg font-semibold">Manage Product</h2>
+                    <p class="text-gray-600 mt-2">View, edit and delete products in your inventory</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h2 class="text-blue-600 text-lg font-semibold">Add New Product</h2>
+                    <p class="text-gray-600 mt-2">Add new products to your inventory with details</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-blue-900 text-white mt-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 py-10">
+
+            <div>
+                <h3 class="font-semibold text-lg">E-Commerce</h3>
+                <p class="text-sm mt-2">Your one-stop shop for the latest trends in fashion, electronics, and lifestyle. Shop smart. Shop easy.</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg">Quick Links</h3>
+                <ul class="mt-2 space-y-1 text-sm">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="login.html" class="hover:underline">Dashboard</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg">Customer Service</h3>
+                <ul class="mt-2 space-y-1 text-sm">
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:underline">Help & Support</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg">Contact Us</h3>
+                <ul class="mt-2 space-y-1 text-sm">
+                    <li> Lahore, Pakistan</li>
+                    <li> support@gmail.com</li>
+                    <li> +92 312 3456789</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-blue-950 text-center py-3 text-sm">
+            © 2025 E-Commerce. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

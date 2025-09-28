@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="flex flex-wrap justify-between items-center px-6 py-4 shadow bg-white">
+        <div class="flex items-center space-x-2">
+            <span class="font-bold text-lg">E-Commerce</span>
+        </div>
+
+        <div class="hidden md:flex space-x-6 mt-4 md:mt-0">
+            <a href="index.html" class="hover:text-blue-600">Home</a>
+            <a href="about.html" class="hover:text-blue-600">About</a>
+            <a href="contact.html" class="hover:text-blue-600">Contact</a>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
+            <button class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full md:w-auto justify-center">
+        <a href="watch.html">Watch List</a>
+      </button>
+
+            <button class="flex items-center space-x-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 w-full md:w-auto justify-center">
+        <a href="cart.html">Your Cart</a>
+      </button>
+
+            <button class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-amber-700 w-full md:w-auto">
+        <a href="login.html">Admin Dashboard</a>
+      </button>
+        </div>
+    </nav>
+
+    <div class="flex items-center justify-center min-h-[80vh] px-4">
+        <div id="cart-container" class="bg-gray-50 p-8 rounded-lg shadow-md text-center w-full max-w-3xl">
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
